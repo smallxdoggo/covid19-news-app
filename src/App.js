@@ -28,7 +28,7 @@ class App extends React.Component{
   }
 
   getNews = async (e) => {
-    const api_call = await fetch(`http://newsapi.org/v2/everything?qInTitle=coronavirus&sortBy=relevancy&apiKey=${API_KEY}`);
+    const api_call = await fetch(`https://newsapi.org/v2/everything?qInTitle=coronavirus&sortBy=relevancy&apiKey=${API_KEY}`);
     const data = await api_call.json();
     console.log(data.articles);
     
